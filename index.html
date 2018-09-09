@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            border-radius: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Node Crude Operation</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="/getMovie">Get All Movie Info</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+                <li>
+                    <a href="#">Page 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h4 style="text-align:center;color:maroon;font-weight:bold;">Give Movie Info</h4>
+                <form method="post" action="/saveMovie">
+                    <label>Movie Name</label>
+                    <input class="form-control" type="text" name="movieName" />
+
+                    <label>Director Year</label>
+                    <input class="form-control" type="text" name="directorName" />
+
+                    <label>Release Year</label>
+                    <input class="form-control" type="text" name="releaseYear" />
+                    <br/>
+
+                    <input class="btn btn-primary" type="submit" name="submitMovie" value="Save" />
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
